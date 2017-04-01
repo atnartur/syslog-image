@@ -20,6 +20,6 @@ syslog:
 `ln -sf /var/run/rsyslog/dev/log /dev/log`
 3. Контейнер PHP должен логировать в LOCAL1
 
-_(Источник)[https://github.com/jpetazzo/syslogdocker/issues/4#issue-95955147]_
+_[Источник](https://github.com/jpetazzo/syslogdocker/issues/4#issue-95955147)_
 
 Формат логирования в syslog меняется в `rsyslog.conf`
