@@ -13,12 +13,12 @@ php:
     - syslog
 
 syslog:
-  image: atnartur/syslog
+  image: atnartur/syslog:alpine
 ```
 
 2. Для подключения логирования в syslog в контейнере PHP нужно выполнить:
 `ln -sf /var/run/rsyslog/dev/log /dev/log`
-3. Контейнер PHP должен логировать в LOCAL1
+3. Контейнеры сервисов должны логировать в LOCAL1
 
 _[Источник](https://github.com/jpetazzo/syslogdocker/issues/4#issue-95955147)_
 
