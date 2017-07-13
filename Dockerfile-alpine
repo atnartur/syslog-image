@@ -1,0 +1,8 @@
+FROM alpine:3.5
+
+RUN apk add rsyslog --no-cache
+
+COPY rsyslog.conf /etc/
+VOLUME /var/run/rsyslog/dev
+
+CMD ["rsyslogd", "-n"]
